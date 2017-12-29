@@ -1,0 +1,34 @@
+{
+  "name": "nilson-furquim-homepage",
+  "version": "0.0.1",
+  "description": "Nilson Furquim da Silva's homepage. A little bit about me and my history.",
+  "main": "entry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NilFurquim/Nilson-Furquim-Homepage.git"
+  },
+  "keywords": [
+    "Gulp",
+    "Sass",
+    "Pug",
+    "Nilson",
+    "Furquim",
+    "Nilfurquim",
+    "Homepage"
+  ],
+  "author": "Nilson Furquim da Silva (nilfurquimds@gmail.com)",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/NilFurquim/Nilson-Furquim-Homepage/issues"
+  },
+  "homepage": "https://github.com/NilFurquim/Nilson-Furquim-Homepage#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-useref": "^3.1.3"
+  }
+}
