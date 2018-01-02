@@ -1,3 +1,7 @@
+# Vim files
+*.swo
+*.swp
+
 # Logs
 logs
 *.log

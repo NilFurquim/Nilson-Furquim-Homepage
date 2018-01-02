@@ -2,8 +2,26 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const pug = require('gulp-pug');
 const useref = require('gulp-useref');
+const bower = require('gulp-bower');
+const filter = require('gulp-filter');
 
+const mainBowerFiles = require('main-bower-files');
 const browserSync = require('browser-sync').create();
+
+//gulp.task('bower:js', function() {
+//	return gulp.src( mainBowerFiles({paths: './app'}), {base: "./app/bower_components"}).pipe(filter('**/*.js')).pipe(gulp.dest('app/js'));
+//});
+//
+//gulp.task('bower:css', function() {
+//	return gulp.src( mainBowerFiles({paths: './app'}), {base: "./app/bower_components"}).pipe(filter('**/*.css')).pipe(gulp.dest('app/css'));
+//});
+
+gulp.task('bower:lib', function() {
+	gulp.src(mainBowerFiles({paths: './app'}))
+		.pipe(gulp.dest('app/lib'));
+	gulp.src('app/bower_components/material-design-icons/iconfont/*')
+		.pipe(gulp.dest('app/lib/mdi'));
+});
 
 gulp.task('sass', function() {
 	return gulp.src('app/scss/**/*.scss')
