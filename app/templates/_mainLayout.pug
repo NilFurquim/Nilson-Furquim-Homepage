@@ -1,0 +1,50 @@
+doctype html
+html
+	block vars
+		- var title = "Index"
+	head
+	title Nilson Furquim | #{title}
+	block stylesheets
+		link(rel="stylesheet" href="lib/materialize.css")
+		link(rel="stylesheet" href="lib/mdi/material-icons.css")
+	body
+		nav
+			div.nav-wrapper
+				a(href="#!").brand-logo Logo
+					i.material-icons cloud
+				a(href="#" data-activates="mobile-demo").button-collapse
+					i.material-icons menu
+				ul.right.hide-on-med-and-down
+					li
+						a My path
+					li
+						a Curriculum
+					li
+						a Ideas
+				ul.side-nav#mobile-demo
+					li
+						a My path
+					li
+						a Curriculum
+					li
+						a Ideas
+		block content
+
+		block scripts
+			script(src="lib/jquery.js")
+			script(src="lib/materialize.js")
+			script(src="js/initial.js")
+		footer.page-footer
+			.container
+				.row
+					h5.white-text Links
+					ul
+						li
+							a.white-text My path
+						li
+							a.white-text Curriculum
+						li
+							a.white-text Ideas
+			.footer-copyright
+				.container © 2016 Copyright - All rights reserved to Nilson Furquim da Silva
+					a.white-text.right(href="#!") Github
