@@ -1,7 +1,7 @@
-#App build destination
+#Generated files
 app/css
 app/lib
-app/.html
+app/*.html
 
 # Vim files
 *.swo
