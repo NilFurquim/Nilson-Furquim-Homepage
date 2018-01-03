@@ -30,8 +30,10 @@ gulp.task('sass', function() {
 });
 
 gulp.task('pug', function() {
-	return gulp.src('app/templates/**/*.pug')
-		.pipe(pug())
+	return gulp.src(['app/templates/**/*.pug','!app/templates/**/_*.pug'])
+		.pipe(pug({
+			pretty: true
+		}))
 		.pipe(gulp.dest('app'));
 });
 
