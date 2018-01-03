@@ -49,7 +49,7 @@ gulp.task('useref', function(){
     .pipe(gulp.dest('dist'))
 });
 
-gulp.task('watch', ['sass', 'pug', 'browserSync'], function() {
+gulp.task('watch', ['bower:lib','sass', 'pug', 'browserSync'], function() {
 	gulp.watch('app/templates/**/*.pug', ['pug']);
 	gulp.watch('app/scss/**/*.scss', ['sass']);
 	gulp.watch('app/**/*.html', browserSync.reload);
