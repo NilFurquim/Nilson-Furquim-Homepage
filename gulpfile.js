@@ -17,7 +17,7 @@ const browserSync = require('browser-sync').create();
 //});
 
 gulp.task('bower:lib', function() {
-	gulp.src(mainBowerFiles({paths: './app'}))
+	gulp.src(mainBowerFiles())
 		.pipe(gulp.dest('app/lib'));
 	gulp.src('app/bower_components/material-design-icons/iconfont/*')
 		.pipe(gulp.dest('app/lib/mdi'));
