@@ -1,0 +1,33 @@
+{
+  "name": "nilson-furquim-homepage",
+  "homepage": "https://github.com/NilFurquim/Nilson-Furquim-Homepage",
+  "authors": [
+    "Nilson Furquim da Silva <nilfurquimds@gmail.com>"
+  ],
+  "description": "Nilson Furquim da Silva's homepage.",
+  "main": "entry.js",
+  "keywords": [
+    "Sass",
+    "Nilson",
+    "Furquim",
+    "Nilfurquim",
+    "Pug",
+    "Gulp",
+    "Homepage"
+  ],
+  "license": "LGPL-3.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-icons": "^3.0.1",
+    "materialize": "^0.100.2",
+    "jquery": "^3.2.1",
+    "mdi": "^2.1.19",
+    "material-icons": "^0.1.0"
+  }
+}
